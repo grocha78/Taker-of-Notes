@@ -2,25 +2,25 @@ const fs = require("fs");
 const router = require('express').Router();
 const { v4: uuidv4 } = require("uuid");
 
-let notesDB = require('../../db/db.json');
+let notesDb = require('../../db/db.json');
 
-router.get('/api/notes', (req, res) => res.json(notesDB));
+router.get('/api/notes', (req, res) => res.json(notesDb));
 router.post('/api/notes', (req, res) => {
     req.body.id = uuidv4();
     const newNote = req.body;
-    notesDB.push(newNote);
+    notesDb.push(newNote);
 
-    fs.writeFileSync("./db/db.json". JSON.stringify(notesDB));
-    res.json(notesDB);
+    fs.writeFileSync("./db/db.json". JSON.stringify(notesDb));
+    res.json(notesDb);
 });
 
 router.delete('/notes/:id', (req, res) => {
     const id = req.params.id;
-    notesDB = notesDB.filter(notes => notes.id != id);
+    notesDb = notesDb.filter(notes => notes.id != id);
     console.log(id)
-    console.log(notesDB)
-    fs.writeFileSync("./db/db.json", JSON.stringify(notesDB));
-    res.json(notesDB);
+    console.log(notesDb)
+    fs.writeFileSync("./db/db.json", JSON.stringify(notesDb));
+    res.json(notesDb);
 
 });
 
