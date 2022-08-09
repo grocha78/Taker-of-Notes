@@ -4,13 +4,13 @@ const { v4: uuidv4 } = require("uuid");
 
 let notesDb = require('../../db/db.json');
 
-router.get('/api/notes', (req, res) => res.json(notesDb));
-router.post('/api/notes', (req, res) => {
+router.get('/notes', (req, res) => res.json(notesDb));
+router.post('/notes', (req, res) => {
     req.body.id = uuidv4();
     const newNote = req.body;
     notesDb.push(newNote);
 
-    fs.writeFileSync("./db/db.json". JSON.stringify(notesDb));
+    fs.writeFileSync("./db/db.json", JSON.stringify(notesDb));
     res.json(notesDb);
 });
 
