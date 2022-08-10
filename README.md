@@ -23,3 +23,12 @@ This project is licensed under the GPL license. Please click here for more info:
 # Contact
 If you have any questions about the repository or about this application please send an email to: rochalupe@gmail.com
 - Github: grocha78
+## Heroku LiveURL Link
+https://taker-of-notes-78.herokuapp.com/
+## Screenshots
+<img width="569" alt="Screen Shot 2022-08-10 at 2 04 37 PM" src="https://user-images.githubusercontent.com/105673691/183997067-c2723125-e830-4bad-8b95-cbcf56360536.png">
+<img width="569" alt="Screen Shot 2022-08-10 at 2 05 23 PM" src="https://user-images.githubusercontent.com/105673691/183997041-15992dde-fa34-48c3-b9aa-0e5b3873fa56.png">
+<img width="569" alt="Screen Shot 2022-08-10 at 2 05 50 PM" src="https://user-images.githubusercontent.com/105673691/183997006-c8ab0b27-3a42-47c0-99ea-1d02eab141ce.png">
+
+## Video Link
+https://drive.google.com/file/d/1-t5GVHImExRMPN7azhaxF8GXv-czVkQ9/view
